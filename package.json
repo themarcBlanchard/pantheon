@@ -1,0 +1,28 @@
+{
+  "name": "pantheon",
+  "version": "1.0.0",
+  "description": "Home of the Greeks gods.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Pantheon",
+    "greeks",
+    "gods",
+    "zeus",
+    "poseidon",
+    "athena",
+    "apollo",
+    "hades",
+    "greeks",
+    "mythology",
+    "greeks",
+    "myths",
+    "gods",
+    "greek",
+    "gods"
+  ],
+  "author": "Marc Blanchard",
+  "license": "ISC"
+}
