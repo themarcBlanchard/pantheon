@@ -1,0 +1,81 @@
+/* styling for index.html */
+/* monochromatic color wheel */
+
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+
+/* setting variables below for every properties */
+:root{
+    --dark-theme: #1B2021; 
+    --secondary-color: #788D91;
+    --light-theme: #F3F4F6;
+    --accent-color: #89023E;
+    --font-prime: 'Poppins', sans-serif;
+}
+
+
+/* body - flex */
+body{
+    background-color: var(--light-theme);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid;
+    height: 100vh;
+    max-width: 75%;
+    margin: 0 auto;
+}
+/* header  */
+.header-title{
+    text-align: left;
+    font-family: 'Caesar Dressing', cursive;
+    font-size: .75rem;
+    color: var(--light-theme);
+    margin: 0;
+    padding: 0 0 2em 0;
+}
+
+/*============================ Media Query =============================*/
+
+/* MEDIA QUERY FOR PHONES  */
+
+@media (max-width: 500px){
+
+    body{
+        margin: 0;
+        width: 80%;
+        background: white;
+        background-image: url('../img/bg/lightening.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .grid-container{
+        border-color: 1px solid crimson;
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: 1fr 2fr 5fr 1fr;
+    }
+
+    .header-title{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: 30px 15px;
+        font-size: 2rem;
+        max-width: 600px;
+        text-align: left;
+    }
+
+    /* FIRST IMAGE - CONTROLLED BUTTONS  */
+    .zeus-img, .gods-img{
+        transform: scale(.8);
+        border-radius: 100px;
+        margin: 10px -20px;
+        -webkit-box-shadow: 5px 5px 13px -3px #7D869C; 
+        box-shadow: 5px 5px 13px -3px #7D869C;
+    }
+
+}
